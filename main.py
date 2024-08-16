@@ -1,6 +1,6 @@
 import os
 import streamlit as st
-from dotenv import  load_dotenv
+# from dotenv import  load_dotenv
 import google.generativeai as gen_ai
 
 #env variables loading
@@ -13,7 +13,7 @@ st.set_page_config(
     layout="centered",
 )
 
-GOOGLE_API_KEY="AIzaSyBAhg_a1rr7hm2pp6yy7hRwcjZnjzr3iRY"
+
 gen_ai.configure(api_key=GOOGLE_API_KEY)
 model=gen_ai.GenerativeModel('gemini-pro')
 
